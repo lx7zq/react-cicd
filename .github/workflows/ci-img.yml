@@ -24,7 +24,7 @@ jobs:
       - name: Build and push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: react-cicd  # ไม่ต้องใส่ naruapon ซ้ำ
+          image: react-cicd
           registry: ghcr.io/lx7zq
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
